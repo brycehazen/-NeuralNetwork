@@ -1,3 +1,5 @@
+    This was my attempt to build a neural network from scratch. 
+        
     Data loading and preprocessing: The script begins by loading a CSV dataset of handwritten digits from MNIST dataset. The dataset is converted to a numpy array and shuffled. It is then split into training and development sets. The pixel values of the images are normalized to range between 0 and 1.
 
     Model parameters initialization: The function init_params() initializes the weights and biases for the two layers of the neural network. The weights are initialized to small random values, and the biases are also initialized to small random values.
