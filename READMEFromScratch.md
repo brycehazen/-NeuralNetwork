@@ -1,17 +1,45 @@
-    This was my attempt to build a neural network from scratch. 
-        
-    Data loading and preprocessing: The script begins by loading a CSV dataset of handwritten digits from MNIST dataset. The dataset is converted to a numpy array and shuffled. It is then split into training and development sets. The pixel values of the images are normalized to range between 0 and 1.
+## Building a Neural Network from Scratch
 
-    Model parameters initialization: The function init_params() initializes the weights and biases for the two layers of the neural network. The weights are initialized to small random values, and the biases are also initialized to small random values.
+### Data Loading and Preprocessing:
 
-    Activation functions: The script defines two activation functions that the neural network uses: ReLU (Rectified Linear Unit) for the hidden layer and softmax for the output layer.
+- The script begins by loading a CSV dataset of handwritten digits from the **MNIST dataset**.
+- The dataset is converted to a numpy array and shuffled.
+- It's then divided into training and development sets.
+- The pixel values of the images are normalized to a range between 0 and 1.
 
-    Forward propagation: The function forward_prop() defines the forward propagation step of the neural network, calculating the predicted outputs.
+### Model Parameters Initialization:
 
-    Backward propagation and parameter updates: The script also defines the backpropagation step, where the gradients of the loss function with respect to the model's parameters are calculated. The parameters are then updated in the direction that minimally reduces the loss function.
+- The `init_params()` function initializes the weights and biases for the two layers of the neural network.
+- Weights are initialized to small random values.
+- Biases are also initialized to small random values.
 
-    Training the model: The function gradient_descent() trains the model using the training data, applying forward propagation, backpropagation, and parameter updates for a given number of iterations.
+### Activation Functions:
 
-    Model evaluation: The code includes functions to make predictions using the trained model (make_predictions()), and to evaluate the accuracy of these predictions (get_accuracy()).
+- The script defines two activation functions for the neural network:
+  1. **ReLU** (Rectified Linear Unit) for the hidden layer.
+  2. **Softmax** for the output layer.
 
-    Prediction visualization: The function test_prediction() visualizes a prediction for a single image. It displays the image and prints the model's predicted digit and the true label.
+### Forward Propagation:
+
+- The `forward_prop()` function details the forward propagation step of the neural network, determining the predicted outputs.
+
+### Backward Propagation and Parameter Updates:
+
+- The script encompasses the backpropagation step, where the gradients of the loss function concerning the model's parameters are determined.
+- Subsequently, the parameters are updated in the direction that minimally amplifies the loss function.
+
+### Training the Model:
+
+- The `gradient_descent()` function trains the model using the training data. 
+- The process includes applying forward propagation, backpropagation, and parameter updates iteratively for a set number of cycles.
+
+### Model Evaluation:
+
+- The code encompasses functions to:
+  1. Make predictions with the trained model (`make_predictions()`).
+  2. Evaluate the accuracy of these predictions (`get_accuracy()`).
+
+### Prediction Visualization:
+
+- The `test_prediction()` function visualizes a prediction for an individual image.
+- It exhibits the image and prints both the model's predicted digit and the true label.
