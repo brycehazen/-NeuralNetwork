@@ -1,10 +1,26 @@
-#Deep learning
-Using Keras for building neural networks
+# Deep Learning Using Keras for Building Neural Networks
 
-create a neural network with two hidden layers of 64 and 32 neurons respectively. The activation function for these layers is ReLU. The output layer has 1 neuron (since we're doing regression) and no activation function. The loss function is mean squared error and the optimizer is Adam.
+## Neural Network Configuration:
 
-This is a simple neural network. Depending on your specific use case and the complexity of your data, you may need a more complex network. For example, you might need more layers, different types of layers (e.g., convolutional or recurrent layers), dropout for regularization, etc.
+- **Hidden Layers**: Two hidden layers with:
+  1. 64 neurons
+  2. 32 neurons
+- **Activation Function**: ReLU for hidden layers.
+- **Output Layer**: 1 neuron (used for regression).
+  - No activation function.
+- **Loss Function**: Mean Squared Error (MSE).
+- **Optimizer**: Adam.
 
-In addition, you might need to tune the hyperparameters of your network to get the best performance. This can be done manually, or by using techniques such as grid search or randomized search.
+## Notes:
 
-You need to have TensorFlow installed in your environment to run this code.
+This is a simple neural network. Depending on your specific use case and the complexity of your data, you may need a more complex network. Factors to consider include:
+
+- Adding more layers.
+- Incorporating different types of layers (e.g., convolutional or recurrent layers).
+- Introducing dropout for regularization.
+
+Moreover, it might be essential to tune the hyperparameters of your network for optimal performance. Approaches for tuning include:
+
+- Manual tuning.
+- Grid search.
+- Randomized search.
